@@ -1,0 +1,64 @@
+import java.util.*;
+ public class RPS{
+   public static void main(String[]args){
+      Scanner sc = new  Scanner(System.in);
+       System..out.println("Enter your choice");
+       int human = sc.nextInt();
+
+      switch(human){
+            case 1:
+                System.out.println("Rock");
+                break;
+            case 2:
+                System.out.println("Paper");
+                break;
+            case 3:
+                System.out.println("Scissors");
+                break;
+            default:
+                  System.out.println("Invalid choice:Please enter a valid choice");
+          }
+
+    int min = 1;
+    int max = 3;
+
+      System.out.println("Computer choice");
+      int comp = (int)(Math.Random*(max-min+1)+min);
+
+     switch(comp){
+            case 1:
+                System.out.println("Rock");
+                break;
+            case 2:
+                System.out.println("Paper");
+                break;
+            case 3:
+                System.out.println("Scissors");
+                break;
+        }
+     if( (human==1 && comp==2) || (human==2 && comp==3) || (human==1 && comp==3)){
+                System.out.println("Computer win!");
+              }
+                else if( (human==2 && comp==1) || (human==3 && comp==2) || (human==3 && comp==1)){
+                  System.out.println("You win!");
+              }
+            else if( human==comp){
+                  System.out.println("Match Tie");
+             else{
+                  System.out.println("Invalid Choice");
+              }
+            }
+          }
+     
+
+
+
+
+
+
+
+
+
+
+
+
